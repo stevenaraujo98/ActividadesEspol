@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".Formulario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/trivia"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/primeraPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="1) Que es lo que mas le apasiona?"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tecnologia" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Literatura" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fotografía" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/segundaPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="2) En que termino academico se encuentra?"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/terminoAcademico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="1ero"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/terceraPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="3) Que carrera se encuentra cursando?"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/carrera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ciencias computacionales"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cuartaPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/_4_que_deporte_practica"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fútbol" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Natación" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Basketball" />
+
+                <EditText
+                    android:id="@+id/deporte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Otro"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/quintaPregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="5) Que está interesado en aprovechar del club?"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hacking" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Video Juegos" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Idiomas" />
+
+                <EditText
+                    android:id="@+id/interes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Otro"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/regresar"
+                    android:layout_width="106dp"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="#939393"
+                    android:fontFamily="monospace"
+                    android:text="@string/regresar"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.078"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.936" />
+
+                <Button
+                    android:id="@+id/siguiente"
+                    android:layout_width="106dp"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="#939393"
+                    android:fontFamily="monospace"
+                    android:text="siguiente"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.078"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.936" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

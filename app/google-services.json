@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "931546934856",
+    "firebase_url": "https://actividades-espol.firebaseio.com",
+    "project_id": "actividades-espol",
+    "storage_bucket": "actividades-espol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931546934856:android:33be64363699fcb9",
+        "android_client_info": {
+          "package_name": "proyecto.mundo.hola.ssam.actividadesespol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931546934856-p3g16369tggjc9a4r489snuojpauv9db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "proyecto.mundo.hola.ssam.actividadesespol",
+            "certificate_hash": "f3783d5363b1ccaff44b72da01810f6308bb0d95"
+          }
+        },
+        {
+          "client_id": "931546934856-oh1camos9sr98h376rpfdmiq13r2ireo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgE_x7kqt-pTRqfly1fUopgghBAoJIO_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931546934856-oh1camos9sr98h376rpfdmiq13r2ireo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
