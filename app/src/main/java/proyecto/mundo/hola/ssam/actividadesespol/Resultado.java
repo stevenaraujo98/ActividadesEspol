@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Resultado extends AppCompatActivity {
     Button botonIR;
@@ -21,7 +22,9 @@ public class Resultado extends AppCompatActivity {
         setContentView(R.layout.activity_resultado);
 
         botonIR = findViewById(R.id.botonIR);
-        primera = findViewById(R.id.primera);
+        primera = (TextView)findViewById(R.id.primera);
+        String[] cont = getIntent().getStringArrayExtra("contenido");
+        //Toast.makeText(Resultado.this, cont[0],Toast.LENGTH_SHORT).show();
 
         botonIR.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,27 +38,6 @@ public class Resultado extends AppCompatActivity {
                 i.putExtra("email", email);
                 i.putExtra("photoUrl", imageUri);
                 startActivity(i);
-            }
-        });
-
-        primera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fg = new Perfil();
-                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.contenidoNoticias,fg);
-                ft.addToBackStack(null);
-                ft.commit();
-
-                //Intent i = new Intent(Resultado.this, Perfil.class);
-                //String name = getIntent().getStringExtra("name");
-                //String email = getIntent().getStringExtra("email");
-                //Uri imageUri = getIntent().getParcelableExtra("photoUrl");
-
-                //i.putExtra("name", name);
-                //i.putExtra("email", email);
-                //i.putExtra("photoUrl", imageUri);
-                //startActivity(i);
             }
         });
     }

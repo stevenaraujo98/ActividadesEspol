@@ -41,14 +41,16 @@ public class MainActivity extends AppCompatActivity {
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!autoCompleteTextView2.getText().toString().equals("") && !tv.getText().toString().equals("")){
-                    if(autoCompleteTextView2.getText().toString().indexOf("@espol.edu.ec") != -1){
-                        createAccount(autoCompleteTextView2.getText().toString(), tv.getText().toString());
-                    }else
-                        Toast.makeText(MainActivity.this, "Ingrese correo Espol!",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(MainActivity.this, "Ingrese correo y contraseña.",Toast.LENGTH_SHORT).show();
-                }
+                Intent i = new Intent(MainActivity.this, Formulario.class);
+                startActivity(i);
+                //if(!autoCompleteTextView2.getText().toString().equals("") && !tv.getText().toString().equals("")){
+                //    if(autoCompleteTextView2.getText().toString().indexOf("@espol.edu.ec") != -1){
+                //        createAccount(autoCompleteTextView2.getText().toString(), tv.getText().toString());
+                //    }else
+                //        Toast.makeText(MainActivity.this, "Ingrese correo Espol!",Toast.LENGTH_SHORT).show();
+                //}else{
+                //    Toast.makeText(MainActivity.this, "Ingrese correo y contraseña.",Toast.LENGTH_SHORT).show();
+                //}
             }
         });
 
@@ -73,20 +75,6 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser, 1);
     }
-/*
-    private void updateUI(FirebaseUser user){
-        if (user != null) {
-            // Name, email address, and profile photo Url
-            String name = user.getDisplayName();
-            String email = user.getEmail();
-            Uri photoUrl = user.getPhotoUrl();
-            Intent i = new Intent(MainActivity.this, Noticias.class);
-            i.putExtra("name", name);
-            i.putExtra("email", email);
-            i.putExtra("photoUrl", photoUrl);
-            startActivity(i);
-        }
-    }*/
 
     private void updateUI(FirebaseUser user, int a){
         if (user != null) {
