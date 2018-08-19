@@ -41,7 +41,11 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Resultado"></activity>
+        <activity android:name=".Resultado" />
+        <activity android:name=".PerfilTaws" />
+        <activity android:name=".PerfilCelula" />
+        <activity android:name=".PerfilFotografia" />
+        <activity android:name=".PerfilIdioma"></activity>
     </application>
 
 </manifest>
